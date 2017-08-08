@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-styles/paper-styles.html">
+
+<dom-module id="cube-panel" attributes="">
+  <template>
+    <style>
+      :host {
+        margin: 16px;
+        width: 100%;
+        min-width: 300px;
+        display: inline-block;
+        background: #FFFFFF;
+        @apply --theme-100;
+        @apply --text-primary;
+        @apply --paper-font-body1;
+        @apply --shadow-transition;
+        @apply --shadow-elevation-2dp;
+        transition: box-shadow 300ms;
+        border-radius: 2px;
+        @apply --cube-layout-panel;
+      }
+    </style>
+    <slot></slot>
+  </template>
+
+  <script>
+    Polymer(
+      {
+        is:         'cube-panel',
+        properties: {}
+      }
+    );
+  </script>
+</dom-module>
